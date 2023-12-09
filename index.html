@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Super Hero Hunter</title>
+    <link rel = "stylesheet" href = "style.css">
+     <!-- Include CryptoJS library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Main wrapper -->
+    <div class = "main-wrapper">
+
+       <!-- App container -->
+        <div class = "app">
+            
+            <!-- App Header section -->
+            <div class = "app-header">
+                <h2 class = "app-header-title"> Super Hero Hunter </h2>
+                <h4><a href="./favorites.html">See your favorites</a></h4>               
+            </div>
+            <!-- App Body Section -->
+            <div class="app-body">
+                <!-- Search box container -->
+                <div class="app-body-search-box">
+                    <!-- Search Form -->
+                    <form class = "app-body-search">
+                        <input type = "text" class = "form-control" autocomplete="off" placeholder="Search your superhero here ..." name = "search">
+                        <button type = "submit" class = "search-btn">
+                            <i class = "fas fa-search"></i>
+                        </button>
+                        <!-- Search List Items -->
+                        <div class = "search-list" id = "search-list">
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- actual data box -->
+                <div class = "app-body-box">
+                    <!-- Superhero Cards Container -->
+                    <div id="superHeroContainer" class = "app-body-content">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
+
+
